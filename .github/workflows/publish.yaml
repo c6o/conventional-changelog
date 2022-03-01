@@ -18,4 +18,5 @@ jobs:
           npm whoami
       - name: Publish
         run: |
-          npm publish --access public patch
+          npm version patch
+          npm publish --access public
