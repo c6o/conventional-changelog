@@ -1,7 +1,7 @@
 {
   "name": "@c6o/conventional-changelog",
   "description": "conventional-changelog preset. Based off metahub",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Narayan Sainaney <narayan@codezero.io>",
   "ava": {
     "files": [
