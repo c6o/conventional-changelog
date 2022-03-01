@@ -57,14 +57,14 @@ module.exports = {
 				'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)',
 			title: 'Styles',
 			emoji: '💎',
-			changelog: true,
+			changelog: false,
 			release: false,
 		},
 		refactor: {
 			description: 'A code change that neither fixes a bug nor adds a feature',
 			title: 'Code Refactoring',
 			emoji: '📦',
-			changelog: true,
+			changelog: false,
 			release: false,
 		},
 		perf: {
@@ -78,7 +78,7 @@ module.exports = {
 			description: 'Adding missing tests or correcting existing tests',
 			title: 'Tests',
 			emoji: '🚨',
-			changelog: true,
+			changelog: false,
 			release: false,
 		},
 		build: {
@@ -86,7 +86,7 @@ module.exports = {
 				'Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)',
 			title: 'Builds',
 			emoji: '🛠',
-			changelog: true,
+			changelog: false,
 			release: 'patch',
 		},
 		ci: {
@@ -94,14 +94,14 @@ module.exports = {
 				'Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)',
 			title: 'Continuous Integrations',
 			emoji: '⚙️',
-			changelog: true,
+			changelog: false,
 			release: false,
 		},
 		chore: {
 			description: "Other changes that don't modify src or test files",
 			title: 'Chores',
 			emoji: '♻️',
-			changelog: true,
+			changelog: false,
 			release: false,
 			aliases: {
 				devDependencies: {
@@ -116,7 +116,7 @@ module.exports = {
 			description: 'Reverts a previous commit',
 			title: 'Reverts',
 			emoji: '🗑',
-			changelog: true,
+			changelog: false,
 			release: false,
 		},
 	},

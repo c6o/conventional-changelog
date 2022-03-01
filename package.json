@@ -1,8 +1,8 @@
 {
-  "name": "conventional-changelog-metahub",
-  "description": "conventional-changelog preset",
-  "version": "0.0.0-development",
-  "author": "Pierre Vanduynslager",
+  "name": "@c6o/conventional-changelog",
+  "description": "conventional-changelog preset. Based off metahub",
+  "version": "0.0.0",
+  "author": "Narayan Sainaney <narayan@codezero.io>",
   "ava": {
     "files": [
       "test/**/*.test.js"
@@ -12,7 +12,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/pvdlg/conventional-changelog-metahub/issues"
+    "url": "https://github.com/c6o/conventional-changelog/issues"
   },
   "dependencies": {
     "conventional-changelog-angular": "^5.0.0",
@@ -45,7 +45,7 @@
     "types.js",
     "aliases.js"
   ],
-  "homepage": "https://github.com/pvdlg/conventional-changelog-metahub#readme",
+  "homepage": "https://github.com/c6o/conventional-changelog#readme",
   "keywords": [
     "changelog",
     "conventional-changelog",
