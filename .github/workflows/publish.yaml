@@ -1,0 +1,21 @@
+name: publish
+on:
+  push:
+    branches:
+      - master
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.CONNERY_C6O_NPM_TOKEN }}
+      NPM_TOKEN: ${{ secrets.CONNERY_C6O_NPM_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: NPM Auth Sanity Check
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+          npm whoami
+      - name: Publish
+        run: |
+          npm publish --access public patch
